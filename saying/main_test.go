@@ -7,15 +7,15 @@ import (
 
 func TestGreet(t *testing.T) {
 	returnedString := Greet("Juan")
-	if returnedString != "Hello my dear loquita Juan" {
-		t.Error("Got", returnedString, "Expected: Hello my dear loquita Juan")
+	if returnedString != "Hello my dear Juan" {
+		t.Error("Got", returnedString, "Expected: Hello my dear Juan")
 	}
 }
 
 func ExampleGreet() {
 	fmt.Println(Greet("Juan"))
 	// Output:
-	// Hello my dear loquita Juan
+	// Hello my dear Juan
 }
 
 func BenchmarkGreet(b *testing.B) {
